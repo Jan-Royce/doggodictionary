@@ -13,8 +13,8 @@ function displayDoggoData(d)
     word.textContent = d[i].word;
     let pos = document.createElement('span');
     pos.className = "entry-pos";
-    pos.textContent = `(${d[i].pos})`;
-    let def = document.createElement('p');
+    pos.textContent = ` (${d[i].pos})`;
+    let def = document.createElement('div');
     def.className = "entry-definition";
     def.textContent = d[i].definition;
     let img = document.createElement('img');

@@ -36,6 +36,7 @@ body {
 {
   font-size: 2vw;
   font-weight: normal;
+  font-style: italic;
 }
 
 .entry-definition
@@ -66,6 +67,7 @@ body {
   {
     font-size: 4vw;
     font-weight: normal;
+    font-style: italic;
   }
 
   .entry-definition
