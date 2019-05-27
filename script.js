@@ -1,3 +1,4 @@
+console.log("parsing json");
 let doggo_json = "assets/doggo.json";
 
 async function getDoggoData()
