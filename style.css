@@ -5,13 +5,73 @@ body {
   margin: 2em;
 }
 
-h1 {
-  font-style: italic;
-  color: #373fff;
+.entry
+{
+  display: grid;
+  grid-template-rows: repeat(5, 6.25vw);
+  grid-template-columns: repeat(10, 6.25vw);
 }
 
 .entry-image
 {
-  width: 35vw;
-  height: 35vw;
+  grid-row: 1/6;
+  grid-column: 1/6;
+}
+
+.entry-image img
+{
+  width: 100%;
+  height: 100%;
+}
+
+.entry-word
+{
+  grid-row: 2/6;
+  grid-column: 6/10;
+  font-size: 4vw;
+  font-weight: bold;
+}
+
+.entry-pos
+{
+  font-size: 2vw;
+  font-weight: normal;
+}
+
+.entry-definition
+{
+  grid-row: 3/6;
+  grid-column: 6/10;
+  font-size: 2.5vw;
+}
+
+@media only screen and (max-width: 480px)
+{
+  .entry
+  {
+    display: grid;
+    grid-template-rows: repeat(5, 10vw);
+    grid-template-columns: repeat(10, 10vw);
+  }
+
+  .entry-word
+  {
+    grid-row: 2/6;
+    grid-column: 6/10;
+    font-size: 8vw;
+    font-weight: bold;
+  }
+
+  .entry-pos
+  {
+    font-size: 4vw;
+    font-weight: normal;
+  }
+
+  .entry-definition
+  {
+    grid-row: 3/6;
+    grid-column: 6/10;
+    font-size: 5vw;
+  }
 }
