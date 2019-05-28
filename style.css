@@ -56,8 +56,39 @@ body
 {
   .entry
   {
-    width: 50%;
-    margin: 0 auto;
+    display: grid;
+    grid-template-rows: repeat(5, 10vw);
+    grid-template-columns: repeat(10, 10vw);
+    margin-bottom: 20px;
+  }
+
+  .entry-word
+  {
+    grid-row: 2/6;
+    grid-column: 6/10;
+    font-size: 8vw;
+    font-weight: bold;
+  }
+
+  .entry-pos
+  {
+    font-size: 4vw;
+    font-weight: normal;
+    font-style: italic;
+  }
+
+  .entry-definition
+  {
+    grid-row: 3/6;
+    grid-column: 6/10;
+    font-size: 5vw;
+  }
+}
+
+@media only screen and (max-device-width: 480px)
+{
+  .entry
+  {
     display: grid;
     grid-template-rows: repeat(5, 10vw);
     grid-template-columns: repeat(10, 10vw);
